@@ -1,7 +1,14 @@
-<h2>Add entities</h2>
+<h2 class="text-center">Add entities</h2>
 
-<mat-selection-list>
-  <mat-list-option *ngFor="let list of lists">
-    {{list.name}}
-  </mat-list-option>
-</mat-selection-list>
+
+<div class="context-area">
+	<div class="search-area">
+		<input type="text" name="search" placeholder="Search">
+	</div>
+	<mat-selection-list>
+	  <mat-list-option *ngFor="let list of lists">
+	  	<div class="divider"></div>
+	    {{list.name}}
+	  </mat-list-option>
+	</mat-selection-list>
+</div>

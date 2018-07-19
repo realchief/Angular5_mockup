@@ -21,4 +21,4 @@ export class ListComponent implements OnInit {
     this.selectedList = list;
   }
 
-}
+}   

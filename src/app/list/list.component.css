@@ -23,6 +23,8 @@
   background-color: #BBD8DC !important;
   color: white;
 }
+
+
 .lists li:hover {
   color: #607D8B;
   background-color: #DDD;
@@ -45,4 +47,42 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+mat-pseudo-checkbox.mat-pseudo-checkbox {
+    position: absolute;
+    left: 15px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+.context-area {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #999;
+  box-shadow: 1px 2px 4px rgba(180, 180, 180, 0.7);
+}
+
+mat-list-option {
+  border-top: 1px solid #999;
+  padding: 10px 0;
+}
+
+.search-area {
+  height: 38px;
+}
+
+.search-area input {
+  padding: 15px;
+  padding-left: 45px;
+  font-size: 14px;
+  border: none;
+  width: calc(100% - 60px);
 }
