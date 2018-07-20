@@ -2,21 +2,6 @@
 	text-align: center;
 }
 
-.color-green {
-	background-color: lightgreen;
-	color: white;
-}
-
-.btn-connect {
-	width: 160px;
-	height: 48px;
-	text-align: center;
-	box-shadow: 1px 2px 4px rgba(180, 180, 180, 0.7);
-	font-family: Arial;
-	border: none;
-	border-radius: 3px;
-}
-
 .align-center {
 	margin: 0 auto;
 }

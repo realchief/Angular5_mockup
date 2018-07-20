@@ -7,7 +7,7 @@ import { MatListModule } from "@angular/material";
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { ConnectedComponent } from './connected/connected.component'
-// import { AppRoutingModule }  from './app-routing.module';
+import { AppRoutingModule }  from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { ConnectedComponent } from './connected/connected.component'
     BrowserModule,
     BrowserAnimationsModule,
     MatListModule,
-    // AppRoutingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
