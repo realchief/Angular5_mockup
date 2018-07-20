@@ -112,3 +112,12 @@ mat-list-option {
   border: none;
   border-radius: 3px;
 }
+
+.list-name {
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+.list-info{
+  font-size: 12px;
+}

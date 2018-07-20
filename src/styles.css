@@ -38,6 +38,26 @@ body .mat-selection-list .mat-list-option .mat-list-item-content-reverse {
     font-size: 16px;    
 }
 
+body.list .mat-list .mat-list-item .mat-list-item-content {
+  display: block;
+}
+
+body.list .mat-list-item-content > * {
+  display: inline-block;
+}
+
+body.list .mat-list-item-content > mat-checkbox {
+  height: 100%;
+}
+
+body.list .mat-list-item-content > *:last-child {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 36px;
+}
+
+
 body.connected {
     background: #ddd;
     width: 100%;
@@ -90,4 +110,8 @@ input:checked ~ .mat-checkbox-ripple:after {
     content: "";
     position: absolute;
     display: none;
+}
+
+.mat-checkbox-inner-container {
+  top: 20px;
 }
