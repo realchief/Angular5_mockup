@@ -64,24 +64,26 @@ h2 {
 }
 
 .context-area {
+  display: table;
+  width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid #999;
+  border: 1px solid #c7c7c7;
   box-shadow: 1px 2px 4px rgba(180, 180, 180, 0.7);
 }
 
 mat-list-option {
-  border-top: 1px solid #999;
+  border-top: 1px solid #c7c7c7;
   padding: 10px 0;
 }
 
-.search-area {
-  height: 38px;
+.search-area, .mat-list {
+  display: table-row;
+  height: 60px;
 }
 
 .search-area input {
-  padding: 15px;
-  padding-left: 45px;
+  padding: 22px;
   font-size: 14px;
   border: none;
   width: calc(100% - 60px);
@@ -113,7 +115,8 @@ mat-list-option {
   border-radius: 3px;
 }
 
-.list-name {
+.list-name, .list-info {
+    margin: 0;
     font-size: 16px;
     color: #4d4d4d;
 }

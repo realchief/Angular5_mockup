@@ -53,10 +53,9 @@ body.list .mat-list-item-content > mat-checkbox {
 body.list .mat-list-item-content > *:last-child {
   display: block;
   position: absolute;
-  top: 20px;
-  left: 36px;
+  top: 15px;
+  left: 50px;
 }
-
 
 body.connected {
     background: #ddd;
@@ -79,7 +78,7 @@ input.mat-checkbox-input {
 }
 
 .mat-list-item-ripple.mat-ripple {   
-    border-top: 1px solid #333;
+    border-top: 1px solid #c7c7c7;
 }
 
 input ~ .mat-checkbox-ripple {

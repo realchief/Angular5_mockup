@@ -7,9 +7,10 @@
 	<mat-list role="list" *ngFor="let entity of entities">
 	  <mat-list-item role="listitem">
 	  	<mat-checkbox [(ngModel)]="entity.selected" (click)="selectEntity(entity)"></mat-checkbox>
-	  	<div class="divider"></div>
-	    <div class="list-name">{{entity.name}}</div>
-	    <div class="list-info">{{entity.info}}</div>
+	  	<div>
+	    	<p class="list-name">{{entity.name}}</p>
+	    	<p class="list-info">{{entity.info}}</p>
+	  	</div>
 	  </mat-list-item>
 	</mat-list>
 </div>

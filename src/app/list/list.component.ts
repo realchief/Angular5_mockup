@@ -25,11 +25,6 @@ export class EntityComponent implements OnInit {
   ngOnDestroy(): void {
     const body = document.getElementsByTagName('body')[0];
     body.classList.remove('list');
-  }
-
-  // selectEntity(entity: Entity) {
-  //   console.log(entity);
-  //   this.entityService.selectEntity(entity);
-  // }
-
+  } 
+  
 }   
