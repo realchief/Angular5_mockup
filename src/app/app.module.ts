@@ -5,12 +5,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatListModule } from "@angular/material";
 
 import { AppComponent } from './app.component';
-import { ListComponent } from './list/list.component'
+import { ListComponent } from './list/list.component';
+import { ConnectedComponent } from './connected/connected.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    ConnectedComponent
   ],
   imports: [
     BrowserModule,
