@@ -1,31 +1,41 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatListModule } from "@angular/material";
-import {MatExpansionModule} from '@angular/material';
-import {MatInputModule} from '@angular/material';
+import { 
+  MatListModule,
+  MatExpansionModule,
+  MatInputModule,
+  MatCheckboxModule,
+} from "@angular/material";
 
 import { AppComponent } from './app.component';
-import { ListComponent } from './list/list.component';
+import { EntityComponent } from './list/list.component';
 import { ConnectedComponent } from './connected/connected.component'
 import { AppRoutingModule }  from './app-routing.module';
+
+import { EntityService } from './services/entity.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
+    EntityComponent,
     ConnectedComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatListModule,
     MatExpansionModule,   
     MatInputModule,
+    MatCheckboxModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    EntityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

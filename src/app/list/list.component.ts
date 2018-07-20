@@ -1,24 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { List } from '../list';
-import { LISTS } from '../mock-list';
+import { EntityService } from '../services/entity.service'
+import { Entity } from '../models/entity';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent implements OnInit { 
+export class EntityComponent implements OnInit { 
 
-  lists = LISTS;
-  selectedList: List;  
+  entities: Entity[];
 
-  constructor() { }
+  constructor(private entityService : EntityService) { }
 
   ngOnInit() {
+    this.entityService.getEntities().subscribe(entities => {
+      this.entities = entities;
+    });
   }
 
-  onSelect(list: List): void {
-    this.selectedList = list;
+  selectEntity(entity: Entity) {
+    console.log(entity);
+    this.entityService.selectEntity(entity);
   }
 
 }   

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatExpansionModule} from '@angular/material';
-import { List } from '../list';
-import { LISTS } from '../mock-list';
+import { Entity } from '../models/entity';
+import { Entities } from '../models/mock-list';
 
 
 @Component({
@@ -11,12 +11,13 @@ import { LISTS } from '../mock-list';
 })
 export class ConnectedComponent implements OnInit {
 
-  lists = LISTS;
-  selectedList: List;  
+  lists = Entities;
+  selectedList: Entity;  
 
   constructor() { }
 
   ngOnInit() {
   }
+  
   panelOpenState = false;
 }
