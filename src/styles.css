@@ -21,3 +21,19 @@ body, input[text], button {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body .mat-selection-list .mat-list-option .mat-list-item-content-reverse {
+  flex-direction: initial;
+}
+
+.mat-pseudo-checkbox {
+    margin-right: 10px;
+}
+
+.mat-selection-list .mat-list-item .mat-list-text>*, .mat-selection-list .mat-list-option .mat-list-text> .list-info {
+    font-size: 12px;
+}
+
+.mat-selection-list .mat-list-item .mat-list-text>*, .mat-selection-list .mat-list-option .mat-list-text> .list-name {
+    font-size: 16px;    
+}
