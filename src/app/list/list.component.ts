@@ -19,9 +19,9 @@ export class EntityComponent implements OnInit {
     });
   }
 
-  selectEntity(entity: Entity) {
-    console.log(entity);
-    this.entityService.selectEntity(entity);
-  }
+  // selectEntity(entity: Entity) {
+  //   console.log(entity);
+  //   this.entityService.selectEntity(entity);
+  // }
 
 }   

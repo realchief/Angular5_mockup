@@ -14,12 +14,12 @@ export class EntityService {
         return this.entities.asObservable();
     }
 
-    selectEntity(entity: Entity) {
-        for (var i = 0; i < this.entities.length; i ++) {
-            if (this.entities[i].id == entity.id) {
-                this.entities['selected'] = !this.entities['selected'];
-            }
-        }
-        console.log('selectentity');
-    }
+    // selectEntity(entity: Entity) {
+    //     for (var i = 0; i < this.entities.length; i ++) {
+    //         if (this.entities[i].id == entity.id) {
+    //             this.entities['selected'] = !this.entities['selected'];
+    //         }
+    //     }
+    //     console.log('selectentity');
+    // }
 }
