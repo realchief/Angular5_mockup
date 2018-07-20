@@ -17,6 +17,14 @@ export class EntityComponent implements OnInit {
     this.entityService.getEntities().subscribe(entities => {
       this.entities = entities;
     });
+
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('list');
+  }
+
+  ngOnDestroy(): void {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('list');
   }
 
   // selectEntity(entity: Entity) {

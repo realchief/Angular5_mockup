@@ -17,9 +17,17 @@ export class ConnectedComponent implements OnInit {
   constructor(private entityService : EntityService) { }
 
   ngOnInit() {
-  	 this.entityService.getEntities().subscribe(
+  	this.entityService.getEntities().subscribe(
   	 	entities => {this.entities = entities.filter(value => value['selected'] == true)}
-  	 ); 
+  	); 
+
+  	const body = document.getElementsByTagName('body')[0];
+    body.classList.add('connected');
+  }
+
+  ngOnDestroy(): void {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('connected');
   }
   
   panelOpenState = false;

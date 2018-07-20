@@ -37,3 +37,57 @@ body .mat-selection-list .mat-list-option .mat-list-item-content-reverse {
 .mat-selection-list .mat-list-item .mat-list-text>*, .mat-selection-list .mat-list-option .mat-list-text> .list-name {
     font-size: 16px;    
 }
+
+body.connected {
+    background: #ddd;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+}
+
+body.connected app-root {
+  width: 300px;
+  margin: auto;
+  position: relative;
+  display: block;
+  background: #fff;
+}
+
+input.mat-checkbox-input {
+  display: none;
+}
+
+.mat-list-item-ripple.mat-ripple {   
+    border-top: 1px solid #333;
+}
+
+input ~ .mat-checkbox-ripple {
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+}
+
+input:checked ~ .mat-checkbox-ripple {
+    background-color: #2196F3;
+    position: absolute;
+}
+
+input:checked ~ .mat-checkbox-ripple:after {
+    display: block;
+}
+
+.mat-checkbox-ripple:after {
+    left: 5px;
+    top: 1px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
