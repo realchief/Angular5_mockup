@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatExpansionModule} from '@angular/material';
 import { Entity } from '../models/entity';
-import { Entities } from '../models/mock-list';
+import { EntityService } from '../services/entity.service'
 
 
 @Component({
@@ -9,14 +9,17 @@ import { Entities } from '../models/mock-list';
   templateUrl: './connected.component.html',
   styleUrls: ['./connected.component.css']
 })
+
 export class ConnectedComponent implements OnInit {
 
-  lists = Entities;
-  selectedList: Entity;  
+  entities: Entity[];
 
-  constructor() { }
+  constructor(private entityService : EntityService) { }
 
   ngOnInit() {
+  	 this.entityService.getEntities().subscribe(
+  	 	entities => {this.entities = entities.filter(value => value['selected'] == true)}
+  	 ); 
   }
   
   panelOpenState = false;

@@ -14,15 +14,12 @@ export class EntityService {
         return this.entities.asObservable();
     }
 
-    getSelectedEntities(): Observable<Entity[]> {
-        return this.entities.pipe(filter(value => value.selected == true));
-    }
-
     selectEntity(entity: Entity) {
         for (var i = 0; i < this.entities.length; i ++) {
             if (this.entities[i].id == entity.id) {
-                this.entities.selected = !this.entities.selected;
+                this.entities['selected'] = !this.entities['selected'];
             }
         }
+        console.log('selectentity');
     }
 }

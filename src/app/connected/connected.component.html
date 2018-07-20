@@ -7,10 +7,10 @@
       </mat-panel-title>  
     </mat-expansion-panel-header>     
 
-  	<mat-list *ngFor="let list of lists">
+  	<mat-list *ngFor="let entity of entities">
 	  	<div class="divider"></div>
-	    <div class="list-name">{{list.name}}</div>
-	    <div class="list-info">{{list.info}}</div>
+	    <div class="list-name">{{entity.name}}</div>
+	    <div class="list-info">{{entity.info}}</div>
   	</mat-list>
   </mat-expansion-panel>
 </mat-accordion>
