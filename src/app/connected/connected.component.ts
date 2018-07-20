@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {MatExpansionModule} from '@angular/material';
+import { List } from '../list';
+import { LISTS } from '../mock-list';
+
 
 @Component({
   selector: 'app-connected',
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConnectedComponent implements OnInit {
 
+  lists = LISTS;
+  selectedList: List;  
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  panelOpenState = false;
 }

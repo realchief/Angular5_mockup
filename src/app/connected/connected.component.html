@@ -1,3 +1,16 @@
-<p>
-  connected works!
-</p>
+<mat-accordion> 
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title class="panel-title">
+        Entities Connected(3)
+      </mat-panel-title>  
+    </mat-expansion-panel-header>     
+
+  	<mat-list *ngFor="let list of lists">
+	  	<div class="divider"></div>
+	    <div class="list-name">{{list.name}}</div>
+	    <div class="list-info">{{list.info}}</div>
+  	</mat-list>
+  </mat-expansion-panel>
+</mat-accordion>
