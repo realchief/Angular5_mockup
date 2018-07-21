@@ -3,9 +3,9 @@
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title class="panel-title">
-        <a routerLink="/list" class="btn"><i class="material-icons">
-        add_circle_outline
-        </i></a>
+        <button mat-button type="button" routerLink="/list">
+          <i class="material-icons">add_circle_outline</i>
+        </button>
         Entities Connected({{entities.length}})
       </mat-panel-title>  
     </mat-expansion-panel-header>     
