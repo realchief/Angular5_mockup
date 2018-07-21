@@ -12,3 +12,11 @@
 .panel-title{
 	color: #4d4d4d;
 }
+
+.plus-button {
+	border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    margin: 8px;
+    border: none;
+}
