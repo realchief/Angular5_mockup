@@ -16,12 +16,14 @@ import { ConnectedComponent } from './connected/connected.component'
 import { AppRoutingModule }  from './app-routing.module';
 
 import { EntityService } from './services/entity.service';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     EntityComponent,
-    ConnectedComponent
+    ConnectedComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

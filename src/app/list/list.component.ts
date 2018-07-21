@@ -8,14 +8,16 @@ import { Entity } from '../models/entity';
   styleUrls: ['./list.component.css']
 })
 export class EntityComponent implements OnInit { 
-
+  public search:any = '';
   entities: Entity[];
+  locked: any[] = [];
 
   constructor(private entityService : EntityService) { }
 
   ngOnInit() {
     this.entityService.getEntities().subscribe(entities => {
       this.entities = entities;
+      this.locked = entities;
     });
 
     const body = document.getElementsByTagName('body')[0];
@@ -26,5 +28,6 @@ export class EntityComponent implements OnInit {
     const body = document.getElementsByTagName('body')[0];
     body.classList.remove('list');
   } 
-  
+
 }   
+
