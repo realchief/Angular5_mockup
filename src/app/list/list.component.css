@@ -83,10 +83,7 @@ mat-list-option {
 }
 
 .search-area input {
-  padding: 22px;
-  font-size: 14px;
   border: none;
-  width: calc(100% - 60px);
 }
 
 

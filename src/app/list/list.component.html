@@ -2,10 +2,14 @@
 <h2 class="text-center">Add entities</h2>
 <div class="context-area">
 	<div class="search-area">
-		<i class="material-icons">search</i>
-		<input matInput type="text" name="search" placeholder="Search Entity" [(ngModel)]="query" id="listSearch">		
-		<i class="material-icons">filter_list</i>
-	</div>	
+		<span class="addon">
+			<i class="material-icons">search</i>
+		</span>
+		<input matInput type="text" name="search" placeholder="Search Entity" [(ngModel)]="query" id="listSearch" class="addon-main">		
+		<span class="addon">
+			<i class="material-icons">filter_list</i>
+		</span>
+	</div>
 	<mat-list role="list" *ngFor="let lock of locked | search: query">
 	  <mat-list-item role="listitem">
 	  	<mat-checkbox [(ngModel)]="lock.selected" (click)="selectEntity(lock)"></mat-checkbox>
